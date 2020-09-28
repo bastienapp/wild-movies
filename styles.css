@@ -1,0 +1,43 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  /* px, %, em, rem */
+  /*  vw et vh */
+  padding: 1rem;
+}
+
+.movie-poster {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  
+  .movie-main {
+    display: flex;
+  }
+  .movie-description {
+    margin: 1rem;
+  }
+
+  .comment {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .comment>section {
+    flex: 1;
+  }
+}

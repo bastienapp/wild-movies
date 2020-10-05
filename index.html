@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wild Movies</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wild Movies</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-  <section class="movie-main">
-    <img class="movie-poster" src="https://via.placeholder.com/200x320">
-    <div class="movie-description">
-      <h1>Titre (durée)</h1>
-      <h2>Réalisateur</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, et nulla? Magni doloribus quisquam sunt dolore
-        rem placeat, libero eveniet. Corporis reprehenderit illum veniam facilis impedit, quas cumque expedita.
-        Provident!
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error suscipit minima modi iusto in, assumenda non
-        voluptatum facere recusandae, at laborum natus architecto. Est modi quas maxime veniam ab alias!
-      </p>
-    </div>
-  </section>
-  <section class="comment">
-    <section class="comment-add">
-      <h3>Ajouter un commentaire</h3>
-      <form>
-        <label for="pseudo">Pseudo :</label>
-        <input id="pseudo"" type=" text">
-        <label for="comment">Commentaire :</label>
-        <textarea id="comment"></textarea>
-        <input class="submit-button" type="submit" value="Envoyer">
-      </form>
+  <body>
+    <section class="movie-list">
+      <section class="movie-main">
+        <img
+          class="movie-poster"
+          src="https://via.placeholder.com/200x320"
+          alt="title"
+        />
+        <div class="movie-description">
+          <h1>Titre (année)</h1>
+          <h2>Réalisateur</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, et
+            nulla? Magni doloribus quisquam sunt dolore rem placeat, libero
+            eveniet. Corporis reprehenderit illum veniam facilis impedit, quas
+            cumque expedita. Provident! Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Error suscipit minima modi iusto in, assumenda non
+            voluptatum facere recusandae, at laborum natus architecto. Est modi
+            quas maxime veniam ab alias!
+          </p>
+        </div>
+      </section>
     </section>
-    <section class="comment-list">
-      <h3>Commentaires</h3>
-      <ul id="comment-container">
-        <li>
-          <h4>Pseudo</h4>
-          <p>Commentaire Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam impedit recusandae corrupti
-            sapiente blanditiis neque doloremque error id obcaecati temporibus saepe reiciendis repellat, similique
-            itaque
-            quisquam iure voluptate! Expedita, repudiandae.</p>
-        </li>
-        <li>
-          <h4>Pseudo</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero, harum eligendi fuga, voluptate
-            maiores
-            libero ex exercitationem assumenda blanditiis vitae ipsam aliquid, eos ratione deserunt impedit quia
-            perspiciatis reiciendis.</p>
-        </li>
-      </ul>
+    <section class="comment">
+      <section class="comment-add">
+        <h3>Ajouter un commentaire</h3>
+        <form>
+          <label for="pseudo">Pseudo :</label>
+          <input id="pseudo"" type=" text">
+          <label for="comment">Commentaire :</label>
+          <textarea id="comment"></textarea>
+          <input class="submit-button" type="submit" value="Envoyer" />
+        </form>
+      </section>
+      <section class="comment-list">
+        <h3>Commentaires</h3>
+        <ul id="comment-container">
+          <li>
+            <h4>Pseudo</h4>
+            <p>
+              Commentaire Lorem ipsum, dolor sit amet consectetur adipisicing
+              elit. Quam impedit recusandae corrupti sapiente blanditiis neque
+              doloremque error id obcaecati temporibus saepe reiciendis
+              repellat, similique itaque quisquam iure voluptate! Expedita,
+              repudiandae.
+            </p>
+          </li>
+          <li>
+            <h4>Pseudo</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+              vero, harum eligendi fuga, voluptate maiores libero ex
+              exercitationem assumenda blanditiis vitae ipsam aliquid, eos
+              ratione deserunt impedit quia perspiciatis reiciendis.
+            </p>
+          </li>
+        </ul>
+      </section>
     </section>
-  </section>
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+    <script src="movies.js"></script>
+  </body>
 </html>
